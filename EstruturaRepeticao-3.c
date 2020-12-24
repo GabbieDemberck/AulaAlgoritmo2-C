@@ -5,18 +5,24 @@ O resultado deve ser uma apresentação de dados na forma de coluna. Pesquise a 
 #include <stdio.h>
 #include <math.h>
 
-int main {
+int main (){
 
     int centimetros = 1;
     int xcentimetros;
     float polegadas;
 
-    scanf("%xcentimetros",&xcentimetros);
+    scanf("%d",&xcentimetros);
     
     while(centimetros <= xcentimetros){
-        polegadas = polegadas + 0,39;
-        printf("%f centimetros = %f", centimetros, polegadas);
+        polegadas = polegadas + 0.39;
+        printf("\n%d centimetros = %1.2f polegadas", centimetros, polegadas);
         centimetros++;
     }
+
     return 0;
 }
+
+// colocar () no main
+// trocar as vírgulas por pontos
+// colocar os decimais
+// colocar polegadas
